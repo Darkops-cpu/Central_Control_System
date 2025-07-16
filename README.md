@@ -42,9 +42,7 @@ A robust 1:1 communication protocol between an **ESP32** and an **Arduino Uno**,
 
 ## System Overview
 
-![System Schematic](sketch.png)
-
-*Add your system schematic above.*
+![System Schematic](schematic.drawio.svg)
 
 ---
 
@@ -69,10 +67,4 @@ A robust 1:1 communication protocol between an **ESP32** and an **Arduino Uno**,
 
 ## License
 
-This project is licensed under the MIT License.
-
----
-
-## Contact
-
-For questions or contributions, please open an issue or submit a pull request.
+Branded under MIT License, read the license for more info and fair use.
