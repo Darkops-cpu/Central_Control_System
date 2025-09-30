@@ -3,7 +3,21 @@
 ![Static Badge](https://img.shields.io/badge/status-completed-orange)
 
 
-A robust 1:1 communication protocol between controllers using GPIO pins. While the example here uses an **ESP32** and an **Arduino Uno**, this protocol can be adapted to any microcontroller pair. Communication relies on the flow of current and voltage differences—essentially a high/low signaling system. The only significant latency is introduced by the webserver and the ESP32 interface.
+Central Control System MK1: Pale Raven – a 1:1 communication protocol between any two microcontrollers, where the only latency is between your response time and the webserver’s response to the microcontroller. The latter is in milliseconds, but this small detail can be crucial for RTOS systems.
+
+The communication protocol is based on the voltage changes that the GPIO pins generate, and these changes are picked up wherever you want them to be picked up. Now, why not simply implement this over the web? Because electrons travel faster than a microcontroller can send packets through the internet.
+
+In this example, I have taken two commonly found microcontrollers:
+
+ESP32 – communicates with the user via a web interface.
+
+Arduino Uno R3 – controls two DC motors using the L298N motor driver.
+
+Here’s the catch: the ESP32 lacks the power to command two motors directly, while the Arduino can handle two DC motors at the same time but lacks the capability to communicate with the user via a web interface. (the response time was nearly dropped by 35%).
+
+To solve this, a communication protocol is established where the ESP32 acts as the bridge between the Arduino and the user, maintaining smooth 1:1 communication. The only delay comes from the web interface and user interaction.
+
+This system can be implemented in many other ways, with different microcontrollers. Thanks for reading!
 
 ---
 
