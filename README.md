@@ -27,12 +27,11 @@ A robust 1:1 communication protocol between controllers using GPIO pins. While t
 
 | ESP32 Pin | Arduino Uno Pin | Function         |
 |-----------|-----------------|------------------|
-| GPIO 17   | D2              | Data Out         |
-| GPIO 16   | D3              | Data In          |
-| GND       | GND             | Common Ground    |
-| 3V3       | 5V (via Reg.)   | Power (if needed)|
+| GPIO 12   | A0              | forward config   |
+| GPIO 13   | A1              | backward config  |
+| GPIO 14   | A3              | right config     |
+| GPIO 27   | A2              | left config      |
 
-> not yet updated
 
 ---
 
@@ -42,7 +41,7 @@ A robust 1:1 communication protocol between controllers using GPIO pins. While t
     ![Schematic](schematic.drawio.svg)
 
 - **Hardware Setup:**  
-    ![Hardware](docs/hardware.jpg)
+    ![Hardware](hardware.drawio.svg)
 
 
 ---
