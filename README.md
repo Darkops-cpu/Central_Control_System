@@ -1,6 +1,6 @@
 # Central Control System MK1: Pale Raven
 
-![Static Badge](https://img.shields.io/badge/status-ongoing-green)
+![Static Badge](https://img.shields.io/badge/status-completed-orange)
 
 
 A robust 1:1 communication protocol between controllers using GPIO pins. While the example here uses an **ESP32** and an **Arduino Uno**, this protocol can be adapted to any microcontroller pair. Communication relies on the flow of current and voltage differences—essentially a high/low signaling system. The only significant latency is introduced by the webserver and the ESP32 interface.
